@@ -154,10 +154,10 @@ Then fill as the following:
 
 Click **Create**
 
-After you the creation process has been finished, **stop the application** and note down the command to enter the virtual enviroment.
+After the creation process has been finished, **stop the application** and note down the command to enter the virtual enviroment.
 It usually looks like this:
 
-> Enter to the virtual environment.To enter to virtual environment, run the command: `source /home/yourusername/nodevenv/public_html/yoursubdomainchoice.yourserver.com/yournodejsversion/bin/activate && cd /home/yourusername/public_html/yoursubdomainchoice.yourserver.com`
+> Enter to the virtual environment. To enter to virtual environment, run the command: `source /home/yourusername/nodevenv/public_html/yoursubdomainchoice.yourserver.com/yournodejsversion/bin/activate && cd /home/yourusername/public_html/yoursubdomainchoice.yourserver.com`
 
 ### 7. In cPanel Terminal do npm install
 
@@ -166,7 +166,7 @@ Go to `Advanced > Terminal`, then paste the command that you have noted down bef
 After succesfully entering the virtual enviroment, the command line should change, there should be a node version and your subdomain.
 It should aproximately look like this:
 
-> [/public_html/yoursubdomainchoice.yourserver.com (yournodejsversion)] [username yoursubdomainchoice.yourserver.com]$
+> [/public_html/yoursubdomainchoice.yourserver.com (yournodejsversion)] [yourusername yoursubdomainchoice.yourserver.com]$
 
 Then do `npm install` and wait until it has finished **completely**
 
@@ -183,11 +183,13 @@ Then do `npm install` and wait until it has finished **completely**
 
 </details>
 
-### 7. Editing the server.js
+### 8. Editing the server.js
 
-Go back to `Files > File Manager` and navigate again into `/home/yourusername/public_html/yoursubdomainchoice.yourserver.com`.
+Go back to `Files > File Manager` and navigate again into
 
-Inside there should now be server.js, if you have done **Step 6** correctly. Edit the file and replace the content with the following:
+`/home/yourusername/public_html/yoursubdomainchoice.yourserver.com`.
+
+Inside there should now be _server.js_, if you have done **Step 6** correctly. Edit the file and replace the content with the following:
 
 ```js
 async function main() {
@@ -205,7 +207,9 @@ main().catch((error) => {
 });
 ```
 
-Make sure you succesfully **Save** it then navigate back into your cPanel Dashboard and go staright into the `Software > Setup Node.JS App > yoursubdomainchoice.yourserver.com`.
+Make sure you succesfully **Save** it then navigate back into your cPanel Dashboard and go staright into the
+
+`Software > Setup Node.JS App > yoursubdomainchoice.yourserver.com`.
 
 Then hit **start** now your project should have run correctly. You can now just enter your `yoursubdomainchoice.yourserver.com` and the Strapi should be deployed correctly.
 
