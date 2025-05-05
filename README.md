@@ -138,6 +138,20 @@ HOST=yoursubdomainchoice.yourserver.com
 PORT=80
 ```
 
+Change your Database Details in the `.env` according to the Database and User that you have created Before. Such as:
+
+```
+# Database
+DATABASE_CLIENT=
+DATABASE_HOST=
+DATABASE_PORT=
+DATABASE_NAME=
+DATABASE_USERNAME=
+DATABASE_PASSWORD=
+DATABASE_SSL=false
+DATABASE_FILENAME=
+```
+
 Make sure to hit **Save** after you've done editing.
 
 ### 6. Setup Node.js App in your cPanel
